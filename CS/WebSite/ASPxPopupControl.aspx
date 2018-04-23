@@ -1,0 +1,28 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ASPxPopupControl.aspx.cs"
+    Inherits="ASPxPopupControl" %>
+<%@ Register Assembly="DevExpress.Web.v11.2, Version=11.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <script type="text/javascript">
+        function OnInit(s, e) {
+            ASPxClientUtils.AttachEventToElement(window.document, "keydown", function(evt) {
+                if(evt.keyCode == ASPxClientUtils.StringToShortcutCode("ESCAPE"))
+                    pc.Hide();
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <form id="frmMain" runat="server">
+    <dx:ASPxPopupControl ID="popupControl" runat="server" ClientInstanceName="pc" CloseAction="CloseButton"
+        ShowOnPageLoad="true">
+        <ClientSideEvents Init="OnInit" />
+    </dx:ASPxPopupControl>
+    </form>
+</body>
+</html>
