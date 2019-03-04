@@ -2,12 +2,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title></title>
+    <title></title>
 </head>
 <body>
-	<form id="frmMain" runat="server">
-	<a href="ASPxButton.aspx">Click ASPxButton when pressing the ESC key</a><br />
-	<a href="ASPxPopupControl.aspx">Hide ASPxPopupControl when pressing the ESC key</a><br />
-	</form>
+    <form id="frmMain" runat="server">
+    <a href="ASPxButton.aspx">Click ASPxButton when pressing the ESC key</a><br />
+    <a href="ASPxPopupControl.aspx">Hide ASPxPopupControl when pressing the ESC key</a><br />
+    </form>
 </body>
 </html>
